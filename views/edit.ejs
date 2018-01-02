@@ -1,0 +1,16 @@
+<ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/area/list">area</a></li>
+        <li class="breadcrumb-item active">Edit</li>
+    </ol>
+    <h1 class="display-4">Edit area</h1>
+    <form method="post" action="/area/update/<%= area.id %>">
+        <div class="form-group">
+            <label for="name">name</label>
+            <input type="text" name="name" class="form-control" value="<%= area.name %>">
+        </div>
+        <div class="form-group">
+            <label for="description">description</label>
+            <textarea name="description" class="form-control"><%= area.description %></textarea>
+        </div>
+        <input type="submit" value="Actualizar" class="btn btn-primary">
+    </form>

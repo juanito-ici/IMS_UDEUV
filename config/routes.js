@@ -34,7 +34,16 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+
+  /*
+  * Route control module for the university life module
+  */
+
+  '/HomeVida': { 
+    view: 'module_vida/homepage_vida'
   }
+
 
   /***************************************************************************
   *                                                                          *
